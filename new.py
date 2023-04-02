@@ -9,7 +9,7 @@ df = px.data.iris()
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("image.jpg");
+background-image: url("https://pixelify.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2020/06/20112726/runnerdesign_2020-3.jpg");
 background-size: 130%;
 }}
 
