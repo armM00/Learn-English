@@ -103,8 +103,9 @@ with col2:
             st.write("Please enter a word")
 
 with st.expander("Radio"):
+
     # st.audio("http://de-hz-fal-stream07.rautemusik.fm/study")
-    st.audio("https://www.youtube.com/live/jfKfPfyJRdk")
+    st.video("https://www.youtube.com/live/jfKfPfyJRdk")
 with st.expander("Legal Info"):
     st.write("<br>Armen-Jean Andreasian <br>Free Apps for All © 2023", unsafe_allow_html=True)
 
