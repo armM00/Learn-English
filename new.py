@@ -105,7 +105,7 @@ with col2:
 with st.expander("Radio"):
 
     # st.audio("http://de-hz-fal-stream07.rautemusik.fm/study")
-    st.video("https://www.youtube.com/live/jfKfPfyJRdk?feature=share")
+    st.video("https://www.youtube.com/live/ZXi8wuRY6iUYVOSe")
 with st.expander("Legal Info"):
     st.write("<br>Armen-Jean Andreasian <br>Free Apps for All © 2023", unsafe_allow_html=True)
 
