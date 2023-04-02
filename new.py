@@ -128,7 +128,7 @@ with footer_container:
                 "This website is intended for educational purposes only and is designed to help kids learn English. "
                 "<br>It is a free resource and does not contain any advertisements. "
                 "<br>Usage of this website by teachers or educational institutions for commercial purposes is  prohibited."
-                "<br>Feel free to inform the developers: freeappforall.softworks@proton.me"
+                "<br>Feel free to inform the developers: freeappsforall.softworks@protonmail.com"
 
                 
                 '</div>',
