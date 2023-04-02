@@ -31,7 +31,7 @@ with st.expander("How to use?"):
              'you can <span style="color:green;"> Middle click </span> on any tab to close it.<b>',
              unsafe_allow_html=True)
 
-    st.write("""<b><span style="color:red;">Note:</span> If the link doesn't update to refresh the website<b>""",
+    st.write("""<b><span style="color:red;">Note:</span> If the link doesn't update try to refresh the website<b>""",
              unsafe_allow_html=True)
 
 
