@@ -37,7 +37,8 @@ with st.expander("How to use?"):
 
 def new_word():
     the_word = st.session_state["new word"]
-    return the_word
+    unicode_word = the_word.replace(" ","%20")
+    return unicode_word
 
 
 st.text_input(label="Enter a word you want to check:",
