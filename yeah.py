@@ -58,6 +58,10 @@ def open_tab(local_url):
     return script_local
 
 
+def show_poster():
+    poster = st.image("https://www.nitrocollege.com/hubfs/online%20learning3.jpeg")
+    return poster
+
 Left_column, Right_column = st.columns(2)  # Element 3
 
 with Left_column:
@@ -76,6 +80,7 @@ if Google_Translator:
     if len(new_word()) != 0:
         script = open_tab(f"https://translate.google.com/?sl=en&tl=vi&text={word}")
         st.components.v1.html(f"<script>{script}</script>")
+        show_poster()
     else:
         st.write("Please enter a word")
 
@@ -83,6 +88,8 @@ if Forvo_com:
     if len(new_word()) != 0:
         script = open_tab(f"https://forvo.com/word/{word}/#en")
         st.components.v1.html(f"<script>{script}</script>")
+        show_poster()
+
     else:
         st.write("Please enter a word")
 
@@ -90,6 +97,8 @@ if Myefe_com:
     if len(new_word()) != 0:
         script = open_tab(f"https://myefe.com/transcription-pronunciation/{word}")
         st.components.v1.html(f"<script>{script}</script>")
+        show_poster()
+
     else:
         st.write("Please enter a word")
 
@@ -98,6 +107,7 @@ if Cambridge_Dictionary:
     if len(new_word()) != 0:
         script = open_tab(f"https://dictionary.cambridge.org/dictionary/english/{word}")
         st.components.v1.html(f"<script>{script}</script>")
+        show_poster()
     else:
         st.write("Please enter a word")
 
@@ -105,6 +115,7 @@ if Collins_Dictionary:
     if len(new_word()) != 0:
         script = open_tab(f"https://www.collinsdictionary.com/dictionary/english/{word}")
         st.components.v1.html(f"<script>{script}</script>")
+        show_poster()
     else:
         st.write("Please enter a word")
 
@@ -112,6 +123,7 @@ if Reverso_Context:
     if len(new_word()) != 0:
         script = open_tab(f"https://context.reverso.net/translation/english-korean/{word}")
         st.components.v1.html(f"<script>{script}</script>")
+        show_poster()
     else:
         st.write("Please enter a word")
 
