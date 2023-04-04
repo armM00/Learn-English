@@ -63,12 +63,12 @@ def open_tab(local_url):
 
 def show_poster():
     urls = [
-        "images/1.png",
-        "images/2.png",
-        "images/3.png",
-        "images/4.png",
-        "images/5.png",
-        "images/6.png",
+        "https://i.ibb.co/nzLqkqq/1.jpg",
+        "https://i.ibb.co/LPMbJ1p/2.jpg",
+        "https://i.ibb.co/55wGQPX/3.jpg",
+        "https://i.ibb.co/zJ7Nx1z/4.jpg",
+        "https://i.ibb.co/s9025Tk/5.jpg",
+        "https://i.ibb.co/m6598PM/6.jpg",
 
     ]
     image = random.choice(urls)
