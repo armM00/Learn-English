@@ -63,6 +63,11 @@ def show_poster():
     return poster
 
 
+def warning():
+    message = st.write("<span style='color:red'>Please enter a word</span>", unsafe_allow_html=True)
+    return message
+
+
 Left_column, Right_column = st.columns(2)  # Element 3
 
 with Left_column:
@@ -83,7 +88,7 @@ if Google_Translator:
         st.components.v1.html(f"<script>{script}</script>")
         show_poster()
     else:
-        st.write("Please enter a word")
+        warning()
 
 if Forvo_com:
     if len(new_word()) != 0:
@@ -91,7 +96,7 @@ if Forvo_com:
         st.components.v1.html(f"<script>{script}</script>")
         show_poster()
     else:
-        st.write("Please enter a word")
+        warning()
 
 if Myefe_com:
     if len(new_word()) != 0:
@@ -99,7 +104,7 @@ if Myefe_com:
         st.components.v1.html(f"<script>{script}</script>")
         show_poster()
     else:
-        st.write("Please enter a word")
+        warning()
 
 
 if Cambridge_Dictionary:
@@ -108,7 +113,7 @@ if Cambridge_Dictionary:
         st.components.v1.html(f"<script>{script}</script>")
         show_poster()
     else:
-        st.write("Please enter a word")
+        warning()
 
 if Collins_Dictionary:
     if len(new_word()) != 0:
@@ -116,7 +121,7 @@ if Collins_Dictionary:
         st.components.v1.html(f"<script>{script}</script>")
         show_poster()
     else:
-        st.write("Please enter a word")
+        warning()
 
 if Reverso_Context:
     if len(new_word()) != 0:
@@ -124,7 +129,7 @@ if Reverso_Context:
         st.components.v1.html(f"<script>{script}</script>")
         show_poster()
     else:
-        st.write("Please enter a word")
+        warning()
 
 
 with st.expander("Radio"):   # Element 4
