@@ -1,5 +1,8 @@
 import streamlit as st
 import plotly.express as px
+import streamlit.components.v1 as components
+import random
+
 
 st.set_page_config(page_title="Learn English",
                    page_icon="🍏")
@@ -7,7 +10,7 @@ df = px.data.iris()
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://pixelify.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2020/06/20112726/runnerdesign_2020-3.jpg");
+background-image: url("https://i.ibb.co/w6mTRgX/cover.jpg");
 background-size: 130%;
 }}
 
@@ -59,7 +62,17 @@ def open_tab(local_url):
 
 
 def show_poster():
-    poster = st.image("https://www.nitrocollege.com/hubfs/online%20learning3.jpeg")
+    urls = [
+        "images/1.png",
+        "images/2.png",
+        "images/3.png",
+        "images/4.png",
+        "images/5.png",
+        "images/6.png",
+
+    ]
+    image = random.choice(urls)
+    poster = st.image(image)
     return poster
 
 
@@ -166,4 +179,3 @@ with footer_container:  # Element 6
 
                 '</div>',
                 unsafe_allow_html=True)
-
