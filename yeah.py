@@ -62,6 +62,7 @@ def show_poster():
     poster = st.image("https://www.nitrocollege.com/hubfs/online%20learning3.jpeg")
     return poster
 
+
 Left_column, Right_column = st.columns(2)  # Element 3
 
 with Left_column:
@@ -89,7 +90,6 @@ if Forvo_com:
         script = open_tab(f"https://forvo.com/word/{word}/#en")
         st.components.v1.html(f"<script>{script}</script>")
         show_poster()
-
     else:
         st.write("Please enter a word")
 
@@ -98,7 +98,6 @@ if Myefe_com:
         script = open_tab(f"https://myefe.com/transcription-pronunciation/{word}")
         st.components.v1.html(f"<script>{script}</script>")
         show_poster()
-
     else:
         st.write("Please enter a word")
 
