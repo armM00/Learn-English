@@ -3,9 +3,7 @@ import plotly.express as px
 
 st.set_page_config(page_title="Learn English",
                    page_icon="🍏")
-
 df = px.data.iris()
-
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
@@ -17,10 +15,10 @@ background-size: 130%;
 """
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
-
 st.title("Learn English")
 
-with st.expander("How to use?"):
+
+with st.expander("How to use?"):    # Element 1
     st.info("Usage: \n1. Enter a word you want to explore \n2. Click on the platform  \n3. Click on 'Check' ")
 
     st.write("""<b><span style='color:yellow;'>Keep in mind:</span> This app doesn't auto-close previously 
@@ -37,16 +35,15 @@ with st.expander("How to use?"):
 
 def new_word():
     the_word = st.session_state["new word"]
-    unicode_word = the_word.replace(" ","%20")
+    unicode_word = the_word.replace(" ", "%20")
     return unicode_word
 
 
-st.text_input(label="Enter a word you want to check:",
+st.text_input(label="Enter a word you want to check:",    # Element 2
               placeholder="Swim, read, drink coffee, etc",
               on_change=new_word,
               key="new word")
 
-word = new_word()
 
 st.write('<style>div.row-widget.stButton > button:first-child '
          '{ width: 100%; background-color: #074986; color: #FFFFFF; border-color: #0072C6; } '
@@ -55,60 +52,77 @@ st.write('<style>div.row-widget.stButton > button:first-child '
          '}</style>',
          unsafe_allow_html=True)
 
-col1, col2 = st.columns(2)
 
-with col1:
-    st.button("Google Translate", key="Google")
+def open_tab(local_url):
+    script_local = f"window.open('{local_url}');"
+    return script_local
 
-    if st.session_state["Google"]:
-        if len(new_word()) != 0:
-            st.write(f"[Check](https://translate.google.com/?sl=en&tl=vi&text={word})")
-        else:
-            st.write("Please enter a word")
 
-    st.button("Forvo", key="Forvo")
+Left_column, Right_column = st.columns(2)  # Element 3
 
-    if st.session_state["Forvo"]:
-        if len(new_word()) != 0:
-            st.write(f"[Check](https://forvo.com/word/{word}/#en)")
-        else:
-            st.write("Please enter a word")
+with Left_column:
+    Google_Translator = st.button("Google Translate")
+    Forvo_com = st.button("Forvo")
+    Myefe_com = st.button("Myefe")
 
-    st.button("Myefe", key="Myefe")
-    if st.session_state["Myefe"]:
-        if len(new_word()) != 0:
-            st.write(f"[Check](https://myefe.com/transcription-pronunciation/{word})")
-        else:
-            st.write("Please enter a word")
+with Right_column:
+    Cambridge_Dictionary = st.button("Cambridge Dictionary")
+    Collins_Dictionary = st.button("Collins Dictionary")
+    Reverso_Context = st.button("Reverso Context")
 
-with col2:
-    st.button("Cambridge Dictionary", key="Cambridge")
-    if st.session_state["Cambridge"]:
-        if len(new_word()) != 0:
-            st.write(f"[Check](https://dictionary.cambridge.org/dictionary/english/{word})")
-        else:
-            st.write("Please enter a word")
+word = new_word()
 
-    st.button("Collins Dictionary", key="Collins")
-    if st.session_state["Collins"]:
-        if len(new_word()) != 0:
-            st.write(f"[Check](https://www.collinsdictionary.com/dictionary/english/{word})")
-        else:
-            st.write("Please enter a word")
+if Google_Translator:
+    if len(new_word()) != 0:
+        script = open_tab(f"https://translate.google.com/?sl=en&tl=vi&text={word}")
+        st.components.v1.html(f"<script>{script}</script>")
+    else:
+        st.write("Please enter a word")
 
-    st.button("Reverso Context", key="Reverso")
-    if st.session_state["Reverso"]:
-        if len(new_word()) != 0:
-            st.write(f"[Check](https://context.reverso.net/translation/english-korean/{word})")
-        else:
-            st.write("Please enter a word")
+if Forvo_com:
+    if len(new_word()) != 0:
+        script = open_tab(f"https://forvo.com/word/{word}/#en")
+        st.components.v1.html(f"<script>{script}</script>")
+    else:
+        st.write("Please enter a word")
 
-with st.expander("Radio"):
-    url = "https://www.youtube.com/watch?v=jfKfPfyJRdk&ab_channel=LofiGirl"
+if Myefe_com:
+    if len(new_word()) != 0:
+        script = open_tab(f"https://myefe.com/transcription-pronunciation/{word}")
+        st.components.v1.html(f"<script>{script}</script>")
+    else:
+        st.write("Please enter a word")
 
+
+if Cambridge_Dictionary:
+    if len(new_word()) != 0:
+        script = open_tab(f"https://dictionary.cambridge.org/dictionary/english/{word}")
+        st.components.v1.html(f"<script>{script}</script>")
+    else:
+        st.write("Please enter a word")
+
+if Collins_Dictionary:
+    if len(new_word()) != 0:
+        script = open_tab(f"https://www.collinsdictionary.com/dictionary/english/{word}")
+        st.components.v1.html(f"<script>{script}</script>")
+    else:
+        st.write("Please enter a word")
+
+if Reverso_Context:
+    if len(new_word()) != 0:
+        script = open_tab(f"https://context.reverso.net/translation/english-korean/{word}")
+        st.components.v1.html(f"<script>{script}</script>")
+    else:
+        st.write("Please enter a word")
+
+
+with st.expander("Radio"):   # Element 4
+    radio_url = "https://www.youtube.com/watch?v=jfKfPfyJRdk&ab_channel=LofiGirl"
     # st.audio("http://de-hz-fal-stream07.rautemusik.fm/study")
-    st.video(url)
-with st.expander("Legal Info"):
+    st.video(radio_url)
+
+
+with st.expander("Legal Info"):  # Element 5
     st.write("<br>Armen-Jean Andreasian <br>Free Apps for All © 2023", unsafe_allow_html=True)
 
 
@@ -126,13 +140,14 @@ footer_container.markdown(
     """,
     unsafe_allow_html=True,
 )
-with footer_container:
+with footer_container:  # Element 6
     st.markdown('<div class="disclaimer">'
                 "This website is intended for educational purposes only and is designed to help kids learn English. "
                 "<br>It is a free resource and does not contain any advertisements. "
                 "<br>Usage of this website by teachers or educational institutions for commercial purposes is  prohibited."
                 "<br>Feel free to inform the developers: freeappsforall.softworks@protonmail.com"
 
-                
+
                 '</div>',
                 unsafe_allow_html=True)
+
