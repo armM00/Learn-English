@@ -169,13 +169,13 @@ footer_container.markdown(
     """,
     unsafe_allow_html=True,
 )
-# with footer_container:  # Element 6
-#     st.markdown('<div class="disclaimer">'
-#                 "This website is intended for educational purposes only and is designed to help kids learn English. "
-#                 "<br>It is a free resource and does not contain any advertisements. "
-#                 "<br>Usage of this website by teachers or educational institutions for commercial purposes is  prohibited."
-#                 "<br>Feel free to inform the developers: freeappsforall.softworks@protonmail.com"
-#
-#
-#                 '</div>',
-#                 unsafe_allow_html=True)
+with footer_container:  # Element 6
+    st.markdown('<div class="disclaimer">'
+                "This website is intended for educational purposes only and is designed to help kids learn English. "
+                "<br>It is a free resource and does not contain any advertisements. "
+                "<br>Usage of this website by teachers or educational institutions for commercial purposes is  prohibited."
+                "<br>Feel free to inform the developers: freeappsforall.softworks@protonmail.com"
+
+
+                '</div>',
+                unsafe_allow_html=True)
