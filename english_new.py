@@ -19,7 +19,7 @@ background-size: 130%;
 """
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
-st.title("Learn English")
+st.title("Learn English Pro")
 
 
 with st.expander("How to use?"):    # Element 1
