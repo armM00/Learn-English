@@ -27,7 +27,7 @@ with st.expander("How to use?"):    # Element 1
                 "To be able to use Better English Pro you need to allow pop-ups for this website"
                 "from your browser's settings."
                 "<br>However, you can still use the basic version of Better English without giving any access"
-                " on: <b> <span style='color:green;'>better.streamlit.com</span>  </b>"
+                " on: <b> <span style='color:green;'>https://better.streamlit.app/</span>  </b>"
                 '</div>',
                 unsafe_allow_html=True)
     st.info("Usage: \n1. Enter a word you want to explore \n2. Click on the platform  \n3. Click on 'Check' ")
