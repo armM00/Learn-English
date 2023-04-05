@@ -1,3 +1,4 @@
+# pro
 import streamlit as st
 import plotly.express as px
 import streamlit.components.v1 as components
@@ -24,9 +25,9 @@ st.title("Learn English")
 with st.expander("How to use?"):    # Element 1
     st.markdown('<div class="disclaimer">'
                 "To be able to use Better English Pro you need to allow pop-ups for this website"
-                "from your browser's settings"
-                "However, you can still use the basic version of Better English without giving any access"
-                "on <b> better.streamlit.com </b>"
+                "from your browser's settings."
+                "<br>However, you can still use the basic version of Better English without giving any access"
+                "on <b> <span style='color:green;'>better.streamlit.com:</span>  </b>"
                 '</div>',
                 unsafe_allow_html=True)
     st.info("Usage: \n1. Enter a word you want to explore \n2. Click on the platform  \n3. Click on 'Check' ")
