@@ -22,6 +22,13 @@ st.title("Learn English")
 
 
 with st.expander("How to use?"):    # Element 1
+    st.markdown('<div class="disclaimer">'
+                "To be able to use Better English Pro you need to allow pop-ups for this website"
+                "from your browser's settings"
+                "However, you can still use the basic version of Better English without giving any access"
+                "on <b> better.streamlit.com </b>"
+                '</div>',
+                unsafe_allow_html=True)
     st.info("Usage: \n1. Enter a word you want to explore \n2. Click on the platform  \n3. Click on 'Check' ")
 
     st.write("""<b><span style='color:yellow;'>Keep in mind:</span> This app doesn't auto-close previously 
@@ -150,6 +157,8 @@ with st.expander("Radio"):   # Element 4
     # st.audio("http://de-hz-fal-stream07.rautemusik.fm/study")
     st.video(radio_url)
 
+with st.expander("Live chat with Learn English AI"):  # Element 5
+    st.info("COMING SOON")
 
 with st.expander("Legal Info"):  # Element 5
     st.write("<br>Armen-Jean Andreasian <br>Free Apps for All © 2023", unsafe_allow_html=True)
