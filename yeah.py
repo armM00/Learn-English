@@ -99,7 +99,7 @@ if Google_Translator:
     if len(new_word()) != 0:
         script = open_tab(f"https://translate.google.com/?sl=en&tl=vi&text={word}")
         st.components.v1.html(f"<script>{script}</script>")
-        show_poster()
+
     else:
         warning()
 
