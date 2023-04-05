@@ -109,9 +109,8 @@ with st.expander("Radio"):
 
     # st.audio("http://de-hz-fal-stream07.rautemusik.fm/study")
     st.video(url)
-with st.expander("Legal Info"):
-    st.write("<br>Armen-Jean Andreasian <br>Free Apps for All © 2023", unsafe_allow_html=True)
-
+with st.expander("Legal Info"):  # Element 5
+    st.write("<br><a href='https://linktr.ee/arm_andreasian_' style='color:green;'>Armen-Jean Andreasian</a> <br>Free Apps for All © 2023", unsafe_allow_html=True)
 footer_container = st.container()
 footer_container.markdown(
     """
