@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 import random
 
 
-st.set_page_config(page_title="Learn English",
+st.set_page_config(page_title="Learn English Pro",
                    page_icon="🍏")
 df = px.data.iris()
 page_bg_img = f"""
