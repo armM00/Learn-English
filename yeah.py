@@ -57,7 +57,7 @@ st.write('<style>div.row-widget.stButton > button:first-child '
 
 
 def open_tab(local_url):
-    script_local = f"window.open('{local_url}');"
+    script_local = f"window.open('{local_url}', '_blank', 'noopener');"
     return script_local
 
 
