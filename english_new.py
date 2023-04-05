@@ -162,8 +162,7 @@ with st.expander("Live chat with Learn English AI"):  # Element 5
     st.info("COMING SOON")
 
 with st.expander("Legal Info"):  # Element 5
-    st.write("<br>Armen-Jean Andreasian <br>Free Apps for All © 2023", unsafe_allow_html=True)
-
+    st.write("<br><a href='https://linktr.ee/arm_andreasian_' style='color:green;'>Armen-Jean Andreasian</a> <br>Free Apps for All © 2023", unsafe_allow_html=True)
 
 footer_container = st.container()
 footer_container.markdown(
