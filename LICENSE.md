@@ -1,4 +1,23 @@
-This website is intended for educational purposes only and is designed to help kids learn English.
-It is a free resource and does not contain any advertisements.
-Usage of this website by teachers or educational institutions for commercial purposes is prohibited.
-Feel free to inform the developers: freeappforall.softworks@proton.me
+MIT License
+
+Copyright (c) 2023 Armen-Jean Andreasian
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+This website is intended for educational purposes only and is designed to help kids learn English. It is a free resource and does not contain any advertisements. Usage of this website by teachers or educational institutions for commercial purposes is prohibited. Feel free to inform the developers: freeappforall.softworks@proton.me 
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
