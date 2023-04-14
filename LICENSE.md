@@ -12,7 +12,7 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included
 in all copies or substantial portions of the Software.
 
-This website is intended for educational purposes only and is designed to help kids learn English. It is a free resource and does not contain any advertisements. Usage of this website by teachers or educational institutions for commercial purposes is prohibited. Feel free to inform the developers: freeappforall.softworks@proton.me 
+This website is intended for educational purposes only and is designed to help kids learn English. It is a free resource and does not contain any advertisements. Usage of this website by teachers or educational institutions for commercial purposes is prohibited. Feel free to inform the developers: freeappsforall.softworks@protonmail.com
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
